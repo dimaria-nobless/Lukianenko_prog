@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+#include <cstdlib>
+
+using namespace std;
+
+double allax_ackbar(double a, int b){
+    if (b == 0) return 1;
+    else if (b > 0) return a * allax_ackbar(a, b - 1);
+    else return 1 / allax_ackbar(a, abs(b));
+}
+
+int main(){
+    double a;
+    int b;
+    cin >> a >> b;
+    cout << allax_ackbar(a, b);
+    return 0;
+}
