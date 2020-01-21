@@ -1,0 +1,48 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // первая задача
+    cout << "2 + 2 * 2 = " << 2 + 2 * 2 << endl;
+
+    // вторая задача
+    int a,b;
+    a = 3;
+    b = 3.999;
+
+    double a2,b2;
+    a2 = 3;
+    b2 = 3.14;
+
+    cout << a << endl << b << endl << a2 << endl << b2 << endl;
+
+    // третья задача
+    int q,o;
+    double q2, o2;
+    cin >> q >> o >> q2 >> o2;
+    cout << q + o << ' ' << q - o << ' ' << q*o << ' '  << q/o << endl;
+    cout << q2 + o2 << ' ' << q2 - 02 << ' ' << q2*o2 << ' ' << q2/o2 << endl;
+    cout << q + o2 << ' ' << q - o2 << ' ' << q*o2 << ' ' << q/o2 << endl;
+    cout << q2 + o << ' ' << q2 - o << ' ' << q2*o << ' ' << q2/o << endl;
+
+    // четвертая задача
+    int z,x, temp;
+    cin >> z >> x;
+    x = z;
+    z = x;
+
+    cout << z << ' ' << x << endl;
+    x = z -x;
+    z = z -x;
+    x = z + x;
+
+    cout << z << ' ' << x << endl;
+
+    // пятая задача
+    const double g = -9.8;
+    double x0, v0, t0;
+    cin >> x0 >> v0 >> t0;
+    cout <<x0 + v0*t0 + g*t0*t0/2 << endl;
+    return 0;
+    }
