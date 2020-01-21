@@ -5,6 +5,7 @@
 using namespace std;
 
 int main(){
+	setlocale(LC_ALL, "Russian");
 	bool a = true;
 	bool b;
 	int otv;
@@ -14,8 +15,8 @@ int main(){
 		b = false;
 		for (int i = 0; i < 5; i++) {
 			cin >> otv;
-			if (otv < q) cout << "çàäàííîå ÷èñëî áîëüøå ÷åì íàäî" << endl;
-			else if (otv > q) cout << "çàäàííîå ÷èñëî ìåíüøå ÷åì íàäî" << endl;
+			if (otv < q) cout << "Ð·Ð°Ð´Ð°Ð½Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð±Ð¾Ð»ÑŒÑˆÐµ Ñ‡ÐµÐ¼ Ð½Ð°Ð´Ð¾" << endl;
+			else if (otv > q) cout << "Ð·Ð°Ð´Ð°Ð½Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¼ÐµÐ½ÑŒÑˆÐµ Ñ‡ÐµÐ¼ Ð½Ð°Ð´Ð¾" << endl;
 			else {
 				cout << "you win!!!" << endl;
 				b = true;
@@ -23,7 +24,7 @@ int main(){
 			}
 		}
 		if (!b) cout << "you luser, becouse right:" << q << endl;
-		cout << "íà÷í¸òå ñ íà÷àëà? (1-ÄÀ)" << endl;
+		cout << "Ð½Ð°Ñ‡Ð½Ñ‘Ñ‚Ðµ Ñ Ð½Ð°Ñ‡Ð°Ð»Ð°? (1-Ð”Ð)" << endl;
 		sin >> otv;
 		a = otv == 1 ? true : false;
 	}
