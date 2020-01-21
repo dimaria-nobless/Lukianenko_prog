@@ -10,14 +10,9 @@ void printBMI(double BMI);
 
 int main()
 {
-	setlocale(LC_ALL, "Russian");
-
 	double weight, height;
 	cin >> weight >> height;
-
 	printBMI(BMI(weight, height / 100.0));
-
-	system("pause");
 	return 0;
 }
 
