@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+void  func(int* arr, int num, int s){
+    for (int i = 0; i < s; i++) if (num < *(arr +i)) swap(num, arr[i]);
+    if (s < 5)  arr[s] = num; 
+}
+void out(int* arr, int num){  
+    for (num; num >= 0; num--) cout << *(arr + num) << ' ';
+    cout << endl;
+}
+
+
+int main(){
+    int a, temp;
+    int b [5];
+
+    cin >> a;
+
+    for  (int i = 0; i < a; i++){
+        cin >> temp;
+        if (i == 0) b[0] = temp;
+        else func(b, temp, (i > 5 ? 5 : i));
+        out (b, (i > 4 ? 4 : i));
+    }
+
+    return 0;
+}
